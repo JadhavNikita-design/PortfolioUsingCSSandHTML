@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:10rem ; 
+    font-style: normal;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    /* display: flex; */
+}
+
+
+/* css for navbar */
+.navbar{
+    height: 12vh;
+    width: 100%;
+     background-color: #2A0944;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;    
+    position: fixed; 
+}
+
+.navbar h2{
+    color: white;
+     position: relative;
+     right: 200px;  
+}
+
+.navbar a{
+      color: white; 
+       text-decoration: none; 
+       font-size: 1rem; 
+       text-transform: uppercase;
+         position: relative; 
+}
+
+.navbar .active{
+    color:#3FA796;
+}
+
+.navbar a:hover{
+   color:#3FA796;
+}
+
+.navbar a::after, .navbar .active::after{
+       content: "";
+       height: .1rem;
+       width: 100%;
+       background-color: #3FA796;
+       position: absolute;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: bottom right;  
+        transition: transform .5s;      
+}
+
+.navbar a:hover::after, .navbar .active::after{
+    background-color: #3FA796;
+    transform: scaleX(1); 
+    transform-origin: bottom left;    
+}
+
+.table-content{
+    height: 100vh;
+    width: 100%;
+}
+
+.table-content h1{
+    position: relative;
+     left: 40%;  
+    top:18vh; 
+} 
+
+table{
+    margin: 25vh auto auto auto;
+    background-color: #3FA796;
+    border: 2px solid black;
+    border-collapse: collapse; 
+}
+
+th,td{
+    padding: 15px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
