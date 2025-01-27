@@ -96,9 +96,23 @@
     font-size: 2.5rem;
     padding-left: 15rem;
     margin-top: 1.5rem;
+    animation: actionanimate 1s infinite alternate ease-in-out; 
+}  
+
+@keyframes actionanimate{
+0% {
+       transform: translateY(0); 
+       opacity: 0; 
+   }
+   100%{
+        transform: translateY(15px); 
+        opacity: 1; 
+   }
+} 
+
 
     
-}
+
 
 .icon{
     color: white;
